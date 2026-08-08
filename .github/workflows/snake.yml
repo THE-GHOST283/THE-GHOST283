@@ -5,12 +5,18 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate snake
+      - name: Baixar repositório
+        uses: actions/checkout@v6
+
+      - name: Gerar cobra
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -18,8 +24,8 @@ jobs:
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
 
-      - name: Push snake to output branch
-        uses: EndBug/add-and-commit@v9
+      - name: Salvar arquivos
+        uses: EndBug/add-and-commit@v10
         with:
           add: "dist"
           message: "Generate snake"

@@ -1,4 +1,4 @@
-<h3 data-importer="text" align="left">oi eu sou um programador python em fase de aprendizado procuro emprego de menor aprendiz pois tenho 14 anos, também estou aprendendo sql (banco de dados) e java.</h3>
+<h3 data-importer="text" align="left">Oi eu sou um programador python em fase de aprendizado procuro emprego de menor aprendiz pois tenho 14 anos, também estou aprendendo sql (banco de dados) e java.</h3>
 
 ###
 
